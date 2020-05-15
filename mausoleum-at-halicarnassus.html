@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Mausoleum at Halicarnassus</title>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<style>
+    @media only screen and (max-width: 768px) {
+        .bgimage {        
+            background-image: url("https://www.telegraph.co.uk/content/dam/Travel/2019/April/Mausoleum%20at%20Halicarnassus.jpg?imwidth=1400");
+            background-size: cover;
+            min-height: 250px;
+            background-repeat: no-repeat;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        .bgimage {        
+            background-image: url("https://www.telegraph.co.uk/content/dam/Travel/2019/April/Mausoleum%20at%20Halicarnassus.jpg?imwidth=1400");
+            background-size: cover;
+            min-height: 300px;
+            background-repeat: no-repeat;
+            background-position-y: -110px;
+        }
+    }
+    #side-nav{
+        border-top: white solid 1px;
+    }
+    #side-nav .nav-item{
+        border-bottom:#6c757d solid 1px;
+    } 
+    #side-nav .nav-item:hover{
+        border-bottom: white solid 1px;
+    } 
+    #side-nav .navbar-nav{
+        width:100%;
+        padding-bottom: 20px;;
+    }
+    #main-content{
+        padding-top: 20px;
+    }
+    
+
+</style>
+</head>
+
+<body>
+        <div class="container">
+            
+            <div class="d-flex flex-column align-items-center flex-md-row p-3 px-md-4 bgimage">
+            </div>
+            <nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="#" style="font-family:Arial Black, Gadget, sans-serif; text-transform: uppercase;">7 Wonders of the Ancient World</a>
+  
+            </nav>
+            <div class="row">
+                <div id="main-content" class="col-md-9 text-justify">
+                    <h1>Mausoleum at Halicarnassus</h1>
+                    <p>
+                        The Mausoleum at Halicarnassus, or Tomb of Mausolus, was a tomb built between 353 and 350 BC at Halicarnassus (present Bodrum, Turkey). It was bult for Mausolus, a governor in the Persian Empire, and Artemisia II of Caria, who was both his wife and his sister.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="img/Mausoleum_of_Halicarnassus.jpg" alt="The Mausoleum at Halicarnassus">
+                                <div class="card-body">
+                                  <p class="card-text">
+                                    A fanciful interpretation of the Mausoleum of Maussollos by Marten Heemskerk, who based his reconstruction on descriptions
+                                  </p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="img/Statue_Maussollos.jpg" alt="Statue">
+                                <div class="card-body">
+                                  <p class="card-text">Colossal statue of a man from the north side of the Mausoleum at Halicarnassus.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" >
+                                <img class="card-img-top" src="img/The_maussolleion_model.jpg" alt="Model">
+                                <div class="card-body">
+                                  <p class="card-text">The word mausoleum has come to be used generically for any grand tomb.</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                   
+                    <p>
+                        The building was designed by the Greek architects Satyros and Pythius of Priene. Each one of the four sides was decorated with sculptural reliefs created by one of four Greek sculptors — Bryaxis, Leochares, Scopas and Timotheus. It was such an accomplishment that Antipater of Sidon said it was one of the Seven Wonders of the World. The word mausoleum has come to be used generically for any grand tomb.
+                    </p>
+                  
+                    <p>
+                        According to the description by the Roman author Pliny the Elder (23–79 CE), the monument was almost square, with a total periphery of 411 feet (125 metres). It was bounded by 36 columns, and the top formed a 24-step pyramid surmounted by a four-horse marble chariot. Fragments of the Mausoleum’s sculpture that are preserved in the British Museum include a frieze of battling Greeks and Amazons and a statue 10 feet (3 metres) high, possibly of Mausolus. The Mausoleum was probably destroyed by an earthquake between the 11th and the 15th century CE, and the stones were reused in local buildings.
+                    </p>
+                    <hr>
+                    <h2>Check your knowledge</h2>
+                   
+                    
+                    <form class="card">
+                        <div class="card-body">
+                            
+                            <div id="quiz-success" class="alert alert-success collapse">
+                                 You are correct! Well done!
+                            </div>
+                            <div id="quiz-fail" class="alert alert-danger collapse">
+                                 Not quite right! Try again!.
+                            </div>
+                            <h5>What does the word Mausoleum mean?</h5>
+                            <input type="radio" name="question1" value="option1" id="rd1"/> <label for="rd1">Any kind of tomb</label> <br/>
+                            <input type="radio" name="question1" value="option2" id="rd2"/> <label for="rd2">A museum</label><br/>
+                            <input type="radio" name="question1" value="option3" id="rd3"/> <label for="rd3">A Greek place of worship</label><br/>
+                            
+                            <input type="button" onclick="return checkAnswers()" class="btn btn-secondary" value="Check My Answer"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3" id="side-nav">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <ul class="navbar-nav" >
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">The Great Pyramid of Giza</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">The Hanging Gardens of Babylon </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">The Statue of Zeus at Olympia</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">The Temple of Artemis</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active" href="#">The Mausoleum of Maussollos</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">The Colossus of Rhodes </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">The Lighthouse of Alexandria</a>
+                            </li>
+                          </ul>
+                      </nav>
+                </div>
+            </div>
+            
+
+            <script type="text/javascript">
+                function checkAnswers() {
+                    var answer1 = $('input[name="question1"]:checked').val(); //this is what user selected 
+                    var correctAnswer1 = "option1"; // this is the correct answer
+                    if(answer1 == correctAnswer1)  {
+                        $("#quiz-success").show();
+                        $("#quiz-fail").hide()
+                    } else {
+                        $("#quiz-success").hide();
+                        $("#quiz-fail").show();
+                    }
+                    return false;
+                }
+            </script>
+
+          
+        </div> <!-- /container -->
+  
+    
+    
+    
+    
+  
+    <footer class="container">
+        <div class="container d-flex flex-column align-items-center flex-md-row p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">           
+        </div>
+    </footer>  
+
+<script type="text/javascript">
+    function checkAnswers1() {
+        var answer = $('input[name="exampleRadios"]:checked').val();
+        if(answer == "option2")
+            alert("Correct!");
+        else 
+            alert("Try Again!");
+        return false;
+    }
+</script>
+
+</body>
+
+</html>
