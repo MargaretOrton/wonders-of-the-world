@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<title>Title of the document</title>
+
+ 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+ 
+
+<style>
+
+    @media only screen and (max-width: 768px) {
+
+        .bgimage {        
+
+            background-image: url("http://2.bp.blogspot.com/-9M0YMFQESvk/Ui-l77jfz6I/AAAAAAAAEz4/ZV3G7TTxveY/s1600/Giza-Pyramids-Egypt1.jpg");
+
+            background-size: cover;
+
+            min-height: 250px;
+
+            background-repeat: no-repeat;
+
+        }
+
+    }
+
+    @media only screen and (min-width: 775px) {
+
+        .bgimage {        
+
+            background-image: url("http://www.sprouls.com/blog/wp-content/uploads/2008/11/lighthouse.jpg");
+
+            background-size: cover;
+
+            min-height: 320px;
+
+            background-repeat: no-repeat;
+
+            background-position-y: -190px;
+
+        }
+
+    }
+
+    #side-nav{
+
+        border-top: white solid 1px;
+
+    }
+
+    #side-nav .nav-item{
+
+        border-bottom:#6c757d solid 1px;
+
+    } 
+
+    #side-nav .nav-item:hover{
+
+        border-bottom: white solid 1px;
+
+    } 
+
+    #side-nav .navbar-nav{
+
+        width:100%;
+
+        padding-bottom: 20px;;
+
+    }
+
+    #main-content{
+
+        padding-top: 20px;
+
+    }
+
+    
+
+ 
+
+</style>
+
+</head>
+
+ 
+
+<body>
+
+        <div class="container">
+
+            
+
+            <div class="d-flex flex-column align-items-center flex-md-row p-3 px-md-4 bgimage">
+
+            </div>
+
+            <nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-dark">
+
+                <a class="navbar-brand" href="#" style="font-family:Arial Black, Gadget, sans-serif; text-transform: uppercase;">7 Wonders of the Ancient World</a>
+
+  
+
+            </nav>
+
+            <div class="row">
+
+                <div id="main-content" class="col-md-9"> >
+<h1> The Lighthouse Of Alexandria</h1>
+                    <img src="img/ax2.jfif"width ="265px">  <img src="img/ax8.jfif" width="265px">  <img src="img/ax3.jfif" width="265px" >      
+                </a><p>The Lighthouse of Alexandria, or the Pharos, was a tall tower built between 285 and 247 BCE. It was built on the island of Pharos in Alexandria, Egypt to serve as a lighthouse for sailors. The top of the tower had a mirror that reflected sunlight during the day; a fire was lit at night.</p>
+                 <p> The word for "lighthouse" in some languages is pharos or its equivalent. </p>
+                <img src="img/ax4.jfif" width="260px">  <img src="img/ax5.jfif" width="260px">
+                <p> ΣΟΣΤΡΑΤΟΣ ΔΕΞΙΦΑΝΟΥ ΚΝΙΔΙΟΣ ΘΕΟΙΣ ΣΩΤΕΡΣΙΝ ΥΠΕΡ ΤΩΝ ΠΛΩΙΖΟΜΕΝΩΝ. (Sostratus of Cnidus, son of Dexiphanes, to the Gods protecting those upon the sea.)
+                  These words were hidden under a layer of plaster, on top of which was chiseled another inscription honoring Ptolemy the king as builder of the Pharos. After centuries the plaster wore away, revealing the name of Sostratus.</p>
+                <p>Divers discovered remains of the lighthouse in fall 1994 on the floor of Alexandria's Eastern Harbour. Some of these remains were brought up and were lying at the harbour on public view at the end of 1995. An episode of the PBS television series Nova chronicled the discovery. Later satellite imaging has revealed further remains. It is possible to go diving and see the ruins.</p>
+                <img src="img/ax7.gif" width="230px" >  <img src="img/ax6.jfif" width="320px">
+                <p>Pharos was a small island located on the western edge of the Nile Delta. In 332 BC Alexander the Great founded the city of Alexandria on an isthmus opposite Pharos. Alexandria and Pharos were later connected by a mole spanning more than 1,200 metres (0.75 miles), which was called the Heptastadion ("seven stadia"—a stadium was a Greek unit of length measuring approximately 180 m). The east side of the mole became the Great Harbour, now an open bay; on the west side lay the port of Eunostos, with its inner basin Kibotos now vastly enlarged to form the modern harbour.</p>
+                <img src="img/ax9.jfif" width="330px" >  <img src="img/ax10.jfif" width="320px"> 
+                <p>Today's city development lying between the present Grand Square and the modern Ras el-Tin quarter is built on the silt which gradually widened and obliterated this mole. The Ras el-Tin promontory, where Ras el-Tin Palace was built in the 19th century, represents all that is left of the island of Pharos, the site of the lighthouse at its eastern point having been weathered away by the sea.</p>   
+                <h2>Time To Check Your knowledge!</h2>
+                <form class="card">
+                    <div class="card-body">
+                        
+                        <div id="quiz-success" class="alert alert-success collapse">
+                             You are correct! Well done!
+                        </div>
+                        <div id="quiz-fail" class="alert alert-danger collapse">
+                             Not quite right! Try again!.
+                        </div>
+                        <h5>What time period was The Lighthouse of Alexandria built?</h5>
+                        <input type="radio" name="question1" value="option1" id="rd1"/> <label for="rd1">A) Between 285 and 247 BCE</label> <br/>
+                        <input type="radio" name="question1" value="option2" id="rd2"/> <label for="rd2">B) Between 247 and 232 BCE</label><br/>
+                        <input type="radio" name="question1" value="option3" id="rd3"/> <label for="rd3">C) Between 232 and 216 BCE</label><br/>
+                        
+                        <input type="button" onclick="return checkAnswers()" class="btn btn-secondary" value="Check My Answer"/>
+                    </div>
+                </form>
+                </div> 
+
+                <div class="col-md-3" id="side-nav">
+
+                    <nav class="navbar navbar-dark bg-dark">
+
+                        <ul class="navbar-nav" >
+
+                          <li class="nav-item">
+
+                            <a class="nav-link active" href="#">The Great Pyramid of Giza</a>
+
+                          </li>
+
+                          <li class="nav-item">
+
+                            <a class="nav-link" href="#">The Hanging Gardens of Babylon</a>
+
+                          </li>
+
+                          <li class="nav-item">
+
+                            <a class="nav-link" href="#">The Statue of Zeus at Olympia</a>
+
+                          </li>
+
+                          <li class="nav-item">
+
+                            <a class="nav-link" href="#">The Temple of Artemis</a>
+
+                          </li>
+
+                          <li class="nav-item">
+
+                            <a class="nav-link" href="#">The Mausoleum of Maussollos</a>
+
+                          </li>
+
+                          <li class="nav-item">
+
+                            <a class="nav-link" href="#">The Colossus of Rhodes</a>
+                          </li>
+
+                          <li class="nav-item">
+
+                            <a class="nav-link" href="#">The Lighthouse of Alexandria</a>
+
+                          </li>
+
+                        </ul>
+
+                      </nav>
+
+                </div>
+
+            </div>           
+
+ 
+
+            
+
+ 
+
+          
+
+        </div> <!-- /container -->
+
+  
+
+    
+
+    
+
+    
+
+    
+
+  
+
+    <footer class="container">
+
+        <div class="container d-flex flex-column align-items-center flex-md-row p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">           
+
+        </div>
+
+    </footer>  
+
+    <script type="text/javascript">
+        function checkAnswers() {
+            var answer1 = $('input[name="question1"]:checked').val(); //this is what user selected 
+            var correctAnswer1 = "option1"; // this is the correct answer
+            if(answer1 == correctAnswer1)  {
+                $("#quiz-success").show();
+                $("#quiz-fail").hide()
+            } else {
+                $("#quiz-success").hide();
+                $("#quiz-fail").show();
+            }
+            return false;
+        }
+    </script>
+
+</body>
+
+ 
+
+</html>
