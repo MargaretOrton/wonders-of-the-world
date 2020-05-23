@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>temple of Artimis</title>
+ 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css";>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js";></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js";></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js";></script>
+ 
+<style>
+    @media only screen and (max-width: 768px) {
+        .bgimage {        
+            background-image: url("https://www.ancient.eu/uploads/images/180.jpg?v=1485680517");
+            min-height: 250px;
+            background-repeat: no-repeat;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        .bgimage {        
+            background-image: url("https://www.ancient.eu/uploads/images/180.jpg?v=1485680517");
+            background-size: cover;
+            min-height: 300px;
+            background-repeat: no-repeat;
+            background-position-y: -260px;
+        }
+    }
+    #side-nav{
+        border-top: white solid 1px;
+    }
+    #side-nav .nav-item{
+        border-bottom:#6c757d solid 1px;
+    } 
+    #side-nav .nav-item:hover{
+        border-bottom: white solid 1px;
+    } 
+    #side-nav .navbar-nav{
+        width:100%;
+        padding-bottom: 20px;;
+    }
+    #main-content{
+        padding-top: 20px;
+    }
+    
+ 
+</style>
+</head>
+ 
+<body>
+        <div class="container">
+            
+            <div class="d-flex flex-column align-items-center flex-md-row p-3 px-md-4 bgimage">
+            </div>
+            <nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="#" style="font-family:Arial Black, Gadget, sans-serif; text-transform: uppercase;">7 Wonders of the Ancient World</a>
+  
+            </nav>
+            <div class="row">
+                <div id="main-content" class="col-md-9">
+                    <h1> <u> <i><span class="red">T</span><span class="green">h</span><span class="blue">e </span><span class="red">T</span><span class="green">e</span><span class="blue">m</span>ple of artimis </i> </u> </h1>
+                    <p>temple of artamis</p>
+                    <p>The Temple of Artemis or Artemision, also known less precisely as the Temple of Diana, was a Greek temple dedicated to an ancient, local form of the goddess Artemis.
+                        <i>(associated with diana a roman goddess). <br></i> it is a very old greek temple <br>
+                        <B> </B>
+                    </p>
+                    <ul>
+                        <li>the estimate for how long it took to build is 10 years!</li>
+                        <li>here is the photo from the top a bit clearer.</li>
+                    </ul>
+                    <img src="img/temple 2.jpg" width= "200"/>
+                     
+                    <br>
+                    <p> the temple of artimis was on estimate built by the greeks in 800bc. it was then destroyed in the 7th centrary and started reconstruction in 550 bc. it took about 10 years to rebuild </p>
+                    <div><p>the temple of artimis was built for the roman godess diane at guess in 800bc.</p></div> <div><p></p></div>
+            
+                    
+                    <a href="https://www.ancient.eu/image/180/model-of-the-temple-of-artemis/" target="_blank">click here</a>
+            
+            
+            
+            
+                    <h2>Here is the photo of the temple of artamis the link to a photo of it is above</h2>
+                    <h3>fun facts</h3>
+                    
+                    <ul>
+                        <li>it is one of the wonders of the world.</li>
+                        <li>it was built by the greeks in turkey</li>
+                        <li>it worships the godess diane</li>
+                    </ul>
+            
+            
+                    <form>  
+                     <p> what is the temple of artimis?</p>
+                    <input type="radio" name="question1" value="option1" id="rd1"/><label for="rd1" >greek temple for the gods</label>
+                    <input type="radio" name="question1" value="option2" id="rd2"/><label for="rd2" >a statue of a god</label>
+                    <input type="radio" name="question1" value="option3" id="rd3"/><label for="rd3" > a giant toilet</label>
+            
+            
+                    <input type="button" onclick="return checkAnswers()" class="btn-info" value="Check!"/>
+                    </form>
+                    <script type="text/javascript">
+                        function checkAnswers() {
+                            var answer1 = $('input[name="question1"]:checked').val();
+                            var correctAnswer1 = "option1" 
+                            if(answer1 == correctAnswer1)  {
+                                    alert("Well done!");
+                                } else {
+                                    alert("Try again!");
+                                }
+                            return false;
+                        }
+                    </script>
+            
+                </div>
+                <div class="col-md-3" id="side-nav">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <ul class="navbar-nav" >
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">The Great Pyramid of Giza</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">The Hanging Gardens of Babylon</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">The Statue of Zeus at Olimpia</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">The Temple Of Artimis</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Mausoleum of Maussollos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Colossus of Rhodes</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Lighthouse of Alexandria</a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>           
+ 
+            
+ 
+          
+        </div> <!-- /container -->
+  
+    
+    
+    
+    
+  
+    <footer class="container">
+        <div class="container d-flex flex-column align-items-center flex-md-row p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">           
+        </div>
+    </footer>  
+ 
+
+</body>
+ 
+</html>
+ 
